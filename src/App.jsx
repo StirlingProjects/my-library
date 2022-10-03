@@ -2,7 +2,6 @@ import "./App.css";
 import NavBar from "./containers/NavBar/NavBar";
 import Library from "./containers/Library/Library";
 import Explore from "./containers/Explore/Explore";
-import BookCard from "./components/BookCard/BookCard";
 import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
@@ -10,11 +9,14 @@ function App() {
     <div className="App">
       <NavBar />
       My Library
-      <SearchBar search_item="Book Name" />
-      <SearchBar search_item="ISBN" />
-      <Library />
-      <Explore />
-      <BookCard />
+      <div className="searchbars">
+        <SearchBar search_item="Book Name" />
+        <SearchBar search_item="ISBN" />
+      </div>
+      <div className="containers">
+        <Library />
+        <Explore />
+      </div>
     </div>
   );
 }
