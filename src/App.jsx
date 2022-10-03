@@ -1,10 +1,17 @@
 import "./App.css";
+
+import { useState } from "react";
+
 import NavBar from "./containers/NavBar/NavBar";
 import Library from "./containers/Library/Library";
 import Explore from "./containers/Explore/Explore";
 import SearchBar from "./components/SearchBar/SearchBar";
 
-function App() {
+import userLibrary from "./assets/data/dummydata";
+
+const App = () => {
+  const [userLibraryArray, setUserLibraryArray] = useState(userLibrary);
+
   return (
     <div className="App">
       <NavBar />
@@ -14,11 +21,11 @@ function App() {
         <SearchBar search_item="ISBN" />
       </div>
       <div className="containers">
-        <Library />
+        <Library libraryArray={userLibraryArray} />
         <Explore />
       </div>
     </div>
   );
-}
+};
 
 export default App;
