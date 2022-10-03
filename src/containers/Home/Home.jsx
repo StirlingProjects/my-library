@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
-import "./Home.scss";
+// import "./Home.scss";
 
 import NavBar from "../NavBar/NavBar";
 import Library from "../Library/Library";
 import Explore from "../Explore/Explore";
-import SearchBar from "../../components/SearchBar/SearchBar";
 
 import userLibrary from "../../assets/data/dummydata";
 
