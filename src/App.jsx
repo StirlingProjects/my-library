@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
       My Library
-      <SearchBar />
+      <SearchBar search_item="Book Name" />
+      <SearchBar search_item="ISBN" />
       <Library />
       <Explore />
       <BookCard />
