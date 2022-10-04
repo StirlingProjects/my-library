@@ -1,17 +1,19 @@
 import React from "react";
 
-const SearchBar = (props) => {
-  const { search_item } = props;
-
+const SearchBar = ({ search_item, handleChange }) => {
   return (
     <div className="searchbar">
-      <label htmlFor="searchbar__input">Enter book {search_item}: </label>
-      <input
-        id="searchbar__input"
-        className="searchbar__input"
-        type="text"
-        placeholder={"Enter " + search_item}
-      />
+      <form onSubmit={handleChange}>
+        <label htmlFor="searchbar__input">Enter {search_item}: </label>
+        <input
+          id="searchbar__input"
+          name="search"
+          className="searchbar__input"
+          type="text"
+          placeholder={"Enter " + search_item}
+        />
+        <input type="submit" />
+      </form>
     </div>
   );
 };
