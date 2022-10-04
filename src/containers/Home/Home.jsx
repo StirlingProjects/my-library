@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./Home.scss";
 
@@ -9,16 +9,16 @@ import Explore from "../Explore/Explore";
 import userLibrary from "../../assets/data/dummydata";
 
 const Home = () => {
-  const [userLibraryArray, setUserLibraryArray] = useState(userLibrary);
+  //const [userLibraryArray, setUserLibraryArray] = useState(userLibrary);
 
-  setUserLibraryArray(userLibrary);
+  // setUserLibraryArray(userLibrary);
   return (
     <div className="home">
       <NavBar />
       My Library
       <div className="home__containers">
         <div className="home__library">
-          <Library libraryArray={userLibraryArray} />
+          <Library libraryArray={userLibrary} />
         </div>
         <div className="home__explore">
           <Explore />
