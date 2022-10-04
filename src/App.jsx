@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import Home from "./containers/Home/Home";
+import Routing from "./containers/Routing/Routing";
 
 const App = () => {
 
 
   return (
     <div className="App">
-      <Home />
+      <Routing />
     </div>
   );
 };

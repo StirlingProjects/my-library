@@ -1,0 +1,19 @@
+.navbar {
+    border: 1px solid black;
+    height: 5%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    &__link {
+        border: 1px solid black;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+      }
+}
+
+
+  
