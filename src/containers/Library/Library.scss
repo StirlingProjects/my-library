@@ -1,0 +1,15 @@
+.library {
+    border: solid black 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
