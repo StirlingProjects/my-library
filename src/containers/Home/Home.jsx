@@ -14,11 +14,8 @@ const Home = () => {
   return (
     <div className="home">
       <NavBar />
-      <div className="home__containers">
-        <div className="home__library">
-          <Library libraryArray={userLibrary} />
-        </div>
-        <div className="home__explore"></div>
+      <div className="home__library">
+        <Library libraryArray={userLibrary} />
       </div>
     </div>
   );

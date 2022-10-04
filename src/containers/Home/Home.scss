@@ -1,21 +1,12 @@
 .home {
-  &__containers {
+  &__library {
     border: 1px solid black;
     
     width: 100%;
-    margin: 1em;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-  }
-
-  &__library {
-    border: purple 1px dashed;
-  }
-
-  &__explore {
-    border: purple 1px dashed;
   }
 }
