@@ -8,17 +8,17 @@ import Library from "../Library/Library";
 import userLibrary from "../../assets/data/dummydata";
 
 const Home = () => {
-  //const [userLibraryArray, setUserLibraryArray] = useState(userLibrary);
+    //const [userLibraryArray, setUserLibraryArray] = useState(userLibrary);
 
-  //setUserLibraryArray(userLibrary);
-  return (
-    <div className="home">
-      <NavBar />
-      <div className="home__library">
-        <Library libraryArray={userLibrary} />
-      </div>
-    </div>
-  );
+    //setUserLibraryArray(userLibrary);
+    return (
+        <div className="home">
+            <NavBar />
+            <div className="home__library">
+                <Library libraryArray={userLibrary} />
+            </div>
+        </div>
+    );
 };
 
 export default Home;

@@ -1,12 +1,12 @@
 .home {
-  &__library {
-    border: 1px solid black;
-    
-    width: 100%;
+    &__library {
+        border: 1px solid black;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
