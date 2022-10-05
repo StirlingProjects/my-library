@@ -6,8 +6,12 @@ import "./Library.scss";
 const Library = (props) => {
   const { libraryArray } = props;
 
-  const libraryJSX = libraryArray.map((book) => {
-    return <BookCard book={book} />;
+  const libraryJSX = libraryArray.map((book, key) => {
+    return (
+      <div key={"library"+key}>
+        <BookCard book={book} />
+      </div>
+    );
   });
 
   return (
